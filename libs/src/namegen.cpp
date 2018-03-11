@@ -35,7 +35,6 @@ namespace rem {
             clearArray(buffer, bufferSize);
             wordCounter++;
         }
-        //std::cout << "Commander, we counted " << wordCounter << ' ' << typeRun << ".\n";
         openFile.close();
     }
 
