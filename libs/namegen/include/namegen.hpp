@@ -7,7 +7,7 @@
 
 namespace rem {
     void checkFileOpen(const char*);
-    void countEntries(const char*, int&, const char*);
+    void countEntries(const char*, int&);
     void clearArray (char*, const int);
     void clearArray (std::string*, const int);
     void populateArray(const char*, const int, std::string*);

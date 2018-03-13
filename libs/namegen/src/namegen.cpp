@@ -21,8 +21,7 @@ namespace rem {
         openFile.close();
     }
 
-    void countEntries(const char* filename, int &wordCounter,
-            const char* typeRun) {
+    void countEntries(const char* filename, int &wordCounter) {
         checkFileOpen(filename);
         std::ifstream openFile(filename);
         int bufferSize = 16;
@@ -55,13 +54,13 @@ namespace rem {
         std::ifstream openFile(filename);
         int bufferSize = 16;
         char buffer[bufferSize];
-        clearArray(buffer, bufferSize);
+        rem::clearArray(buffer, bufferSize);
         for (int i = 0; i < counterVar; i++) {
             openFile >> buffer;
             if (openFile.eof())
                 break;
             arrayName[i] = buffer;
-            clearArray(buffer, bufferSize);
+            rem::clearArray(buffer, bufferSize);
         }
         openFile.close();
     }

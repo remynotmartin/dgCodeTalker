@@ -1,3 +1,3 @@
 #!/bin/sh
 
-g++ -Wall -c ../src/*.cpp -I ../include
+g++ -std=c++11 -Wall ../src/*.cpp -I ../../libs/include -L../../lib -lnamegen -o ../../bin/codeTalker.out
